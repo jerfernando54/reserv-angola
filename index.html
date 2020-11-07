@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva Angola</title>
+
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+    <!-- Progress Bar -->
+    <script src="js/progressbar.min.js"></script>
+    <!-- Parallax -->
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+
+</head>
+<body>
+   <!--barra de navegation-->
+    <header> 
+        <div class="container" id="nav-container">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+                <a class="navbar-brand" href="#">Reserva Angola</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                        <div class="navbar-nav">
+                            <a href="#" class="nav-item nav-link active" id="home-menu">Inicio</a>
+                            <a href="#" class="nav-item nav-link" id="services-menu">Reservar</a>
+                            <a href="#" class="nav-item nav-link" id="asking-menu">Pedidos</a>
+                            <a href="#" class="nav-item nav-link" id="about-menu">Sobre nós</a>
+                            <a href="#" class="nav-item nav-link" id="offers-menu">Ofertas</a>
+                            <a href="#" class="nav-item nav-link" id="contact-menu">Contacto</a>
+                        </div>
+                    </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!--slider area-->
+        <div class="container-fluid">
+            <div id="mainslider" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#mainslider" data-slide-to="0" class="active"></li>
+                    <li data-target="#mainslider" data-slide-to="1" ></li>
+                    <li data-target="#mainslider" data-slide-to="2" ></li>
+                </ol>
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/hotel_Dubay.jpg" alt="hotel dubay">
+                        <div class="carousel-caption d-md-block">
+                            <h2>Hotel Dubay</h2>
+                            <p>Visite o Hotel 7 estrelas do Dubay.</p>
+                            <a href="#" class="main-btn" >Ver hotel</a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/interior.jpg" alt="hotel dubay">
+                        <div class="carousel-caption d-md-block">
+                            <h2>Swite Master</h2>
+                            <p>Visite o Hotel 5 estrelas do Dubay.</p>
+                            <a href="#" class="main-btn" >Ver hotel</a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/manor-house.jpg" alt="hotel dubay">
+                        <div class="carousel-caption d-md-block">
+                            <h2>Menor-house</h2>
+                            <p>Visite o nosso menor-house em Angola.</p>
+                            <a href="#" class="main-btn" >Ver mais</a>
+                        </div>
+                    </div>
+
+                </div>
+                <a href="#mainslider" class="carousel-control-prev" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a href="#mainslider" class="carousel-control-next" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!--as secções vão aqui-->
+            <!--Nossos serviços-->
+            <div id="services-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="main-title">
+                                Reservas
+                            </h3>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-hotel"></i>
+                            <h4>Hotel</h4>
+                            <p>Garantimos a sua hospedagem nos melhores hoteis de Angola.</p>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-bed"></i>
+                            <h4>Hostal</h4>
+                            <p>Garantimos a sua hospedagem nos melhores hostais de Angola.</p>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-home"></i>
+                            <h4>Vivenda</h4>
+                            <p>Garantimos a sua hospedagem nas melhores vivendas de Angola.</p>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-car"></i>
+                            <h4>Automoveis</h4>
+                            <p>Faça a sua reserva e garanta a sua locomoção com as melhores agencias rent-car.</p>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-utensils"></i>
+                            <h4>Restaurante</h4>
+                            <p>Faça a sua reserva nos melhores restaurantes de Angola e disfrute da rica gastronomia angolana.</p>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-toolbox"></i>
+                            <h4>Outros</h4>
+                            <p>Temos variedades de serviços para lhe oferecer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Mais solicitados. Paralax-->
+            <div id="data-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 circle-box">
+                            <div id="circleA"></div>
+                                <p>Hoteis</p>                        
+                        </div>
+                        <div class="col-md-3 circle-box">
+                            <div id="circleB"></div>
+                                <p>Renta-car</p>                        
+                        </div>
+                        <div class="col-md-3 circle-box">
+                            <div id="circleC"></div>
+                                <p>Restaurantes</p>                        
+                        </div>
+                        <div class="col-md-3 circle-box">
+                            <div id="circleD"></div>
+                                <p>Vivendas</p>                      
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!--about area-->
+            <div id="about-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="main-title">Sobre Reserva Angola</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="img/RA_agency.jpg" alt="Reserva Angola agency">
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="about-title">Uma agência que pensa no futuro</h3>
+                            <p>Oferecemos o melhor serviço de reserva de hotel, vivenda, hostal, automoveis e outros.</p>
+                            <p>Trabalhamos para garantir a qualidade aos nossos clientes.</p>
+                            <p>Faça a sua reserva apenas com um click</p>
+                            <ul id="about-list">
+                                <li><i class="fas fa-check"></i>Trabalhamos para ti 24h</li>
+                                <li><i class="fas fa-check"></i>Preços acessiveis</li>
+                                <li><i class="fas fa-check"></i>Garantimos a sua reserva a tempo e hora</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Trabalhe conosco-->
+            <div id="apply-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6" id="company-img">
+                        </div>
+                        <div class="col-md-6 apply-box" id="pattern-img">
+                            <h4>Resgistre o seu investimento</h4>
+                            <p>Deseja maximizar os seus clientes?</p>
+                            <p>Nao perca mais tempo, registre aqui o seu hotel e acompanhe de perto o seu crescimento</p>
+                            <p>Click no botao abaixo e siga os passos.</p>
+                            <a href="#" class="main-btn" id="apply-btn">Registrar investimento</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--portofolio-area-->
+            <div id="portofolio-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="main-title">Conheça nossas ofertas</h3>
+                        </div>
+                        <div class="col-md-12" id="filter-btn-box">
+                            <button class="main-btn filter-btn active" id="all-btn">
+                                Todos
+                            </button>
+                            <button class="main-btn filter-btn" id="hotel-btn">
+                                Hoteis
+                            </button>
+                            <button class="main-btn filter-btn" id="rent-btn">
+                                Automoveis
+                            </button>
+                            <button class="main-btn filter-btn" id="hostal-btn">
+                                Hostais
+                            </button>
+                        </div>
+                        <div class="col-md-4 project-box hotel">
+                            <img src="img/pool.jpeg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-4 project-box hostal">
+                            <img src="img/casa_2.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-4 project-box rent">
+                            <img src="img/rent_1.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-4 project-box hotel">
+                            <img src="img/hotel-3.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-4 project-box rent">
+                            <img src="img/rent_2.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-4 project-box hostal">
+                            <img src="img/casa_3.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Newsletter-->
+            <div id="news-area">
+                <div class="container">
+                    <div class="col-md-12">
+                        <h3 class="main-title">Fique dentro das novidades</h3>
+                    </div>
+                    <p>Assine a nossa lista de e-mail e fique dentro das novidades</p>
+                    <form action="">
+                        <input type="email" class="form-control" id="email-input" name="email" placeholder="Email">
+                        <input type="submit" id="news-btn" value="Inscrever">
+                    </form>
+                </div>
+            </div>
+            <!--call to action-->
+            <div id="call-area">
+                <div class="container">
+                    <div class="row">
+                      <p>Deseja fazer um orçamento sem compromisso?</p>
+                      <button class="main-btn" id="call-btn">Orçar</button>
+                    </div>
+                  </div>
+              </div>
+    
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <div id="contact-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="main-title">
+                            Entre em contacto conosco
+                        </h3>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fas fa-phone"></i>
+                        <p><span class="contact-title">Ligue para: </span>(+244)939574174</p>
+                        <p><span class="contact-title">Horario: </span>8:00 - 17:00</p>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fas fa-envelope"></i>
+                        <p><span class="contact-title">Envie um email: </span>reservangola@gmail.com</p>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p><span class="contact-title">Visite-nos pessoalmente: </span>Samba-Curimba/Rua 26 B</p>
+                    </div>
+                    <div class="col-md-6" id="msg-box">
+                        <p>Ou deixe-nos uma mensagem: </p>
+                    </div>
+                    <div class="col-md-6" id="contact-form">
+                        <form action="">
+                            <input type="email" class="form-control" placeholder="E-mail" name="email" >
+                            <input type="text" class="form-control" placeholder="Assunto" name="subject">
+                            <textarea class="form-control" name="message" rows="3" placeholder="Sua mensagem..."></textarea>
+                            <input type="submit" class="main-btn" value="ENVIAR"  >
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="copy-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Desenvolvido por <a href="" target="_blank"> Duarth Fernandes</a> &copy; 2020</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--script do projecto-->
+    <script src="js/script.js"></script>
+</body>
+</html>
